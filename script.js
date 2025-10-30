@@ -10,6 +10,7 @@ buttons.forEach((button) => {
 Acceptbutton.addEventListener("click", (e) => {
   document.getElementById("WelcomeState").style.display = "none";
   document.getElementById("ThankYouState").style.display = "block";
+  document.getElementById("ThankYouState").classList.add("active");
   if (selected ) {
     MyRes.innerHTML = `You have selected ${selected} out of 5`;
     document.appendChild(MyRes);
